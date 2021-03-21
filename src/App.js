@@ -3,21 +3,24 @@ import Profile from "./components/profile/Profile";
 import user from "./user.json";
 import StatisticsList from "./components/statistics/StatisticsList";
 import statsData from "./statistical-data.json";
-console.log({statsData});
+
+
+const title = 'Upload stats';
+
 
 const App = () => {
   return (
     <div>
       <h1><em>Профиль социальной сети</em></h1>
-      {/* <Profile
+      <Profile
         name={user.name}
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
-      /> */}
-      <h1>Секция статистики</h1>
-      <StatisticsList statsData={statsData} />
+      />
+      <h1><em>Секция статистики</em></h1>
+      <StatisticsList statsData={statsData} title={title}/>
     </div>
   );
 };

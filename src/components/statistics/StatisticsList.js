@@ -1,10 +1,14 @@
 import React from "react";
 import Statistics from "../statistics/Statistics";
+import PropTypes from "prop-types";
 
-const StatisticsList = ({ statsData }) => {
+
+
+
+const StatisticsList = ({ statsData, title }) => {
   return (
     <section className="statistics">
-      <h2 className="title">Upload stats</h2>
+      {title && <h2 className="title">{title}</h2>}
       <ul className="stat-list">
         {statsData.map(({ id, label, percentage }) => (
           <li key={id}>
@@ -14,6 +18,19 @@ const StatisticsList = ({ statsData }) => {
       </ul>
     </section>
   );
+};
+
+StatisticsList.defaultProps = {
+  title:''
+}
+
+StatisticsList.propTypes = {
+  title: PropTypes.string,
+  statsData: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default StatisticsList;
