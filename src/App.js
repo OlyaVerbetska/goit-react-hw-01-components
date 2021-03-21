@@ -5,7 +5,7 @@ import StatisticsList from "./components/statistics/StatisticsList";
 import statsData from "./statistical-data.json";
 
 
-const title = 'Upload stats';
+
 
 
 const App = () => {
@@ -20,7 +20,8 @@ const App = () => {
         stats={user.stats}
       />
       <h1><em>Секция статистики</em></h1>
-      <StatisticsList statsData={statsData} title={title}/>
+      <StatisticsList statsData={statsData} title='Upload stats'/>
+      {/* <StatisticsList statsData={statsData}/> */}
     </div>
   );
 };
