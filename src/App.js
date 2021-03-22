@@ -14,7 +14,7 @@ import TransactionHistory from "./components/transactions/TransactionHistory"
 const App = () => {
   return (
     <div>
-      {/* <h1><em>Профиль социальной сети</em></h1>
+      <h1><em>Профиль социальной сети</em></h1>
       <Profile
         name={user.name}
         tag={user.tag}
@@ -24,10 +24,10 @@ const App = () => {
       />
       <h1><em>Секция статистики</em></h1>
       <StatisticsList statsData={statsData} title='Upload stats'/>
-      <StatisticsList statsData={statsData}/> */}
+      <StatisticsList statsData={statsData}/>
             
-      {/* <h1><em>Список друзей</em></h1>
-      <FriendList friends = {friends}/> */}
+      <h1><em>Список друзей</em></h1>
+      <FriendList friends = {friends}/>
       <h1><em>История транзакций</em></h1>
       <TransactionHistory
       items = {transactions}/>
