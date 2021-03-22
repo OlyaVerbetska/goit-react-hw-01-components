@@ -1,5 +1,5 @@
 import React from "react";
-import imagePlacer from "../profile/ImagePlacer.jpg";
+import imagePlacer from "../../ImagePlacer.jpg";
 import PropTypes from 'prop-types';
 
 const Profile = ({avatar, name, tag, location, stats:{followers,views,likes}}) => {
