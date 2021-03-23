@@ -1,11 +1,10 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import imagePlacer from "../../ImagePlacer.jpg";
 
 
-const FriendListItem =({ id, avatar, name, status }) =>
+const FriendListItem =({ avatar, name, status }) =>
 {return (
-    <li className="item" key={id}>
+    <li className="item">
   <span className="status">{status? "online" : "offline"}</span>
   <img className="avatar" src={avatar} alt="" width="48" />
   <p className="name">{name}</p>

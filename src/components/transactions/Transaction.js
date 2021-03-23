@@ -1,5 +1,3 @@
-import React, { Fragment } from 'react';
-
 
 const Transaction = ({type, amount, currency}) => {
   return (
