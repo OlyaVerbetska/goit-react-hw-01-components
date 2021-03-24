@@ -8,7 +8,7 @@ import transactions from './transactions.json';
 import Profile from './components/Profile/Profile';
 import StatisticsList from './components/StatisticsList/StatisticsList';
 import FriendList from './components/FriendList/FriendList';
-import TransactionHistory from './components/transactions/TransactionHistory';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
 const App = () => {
   return (
