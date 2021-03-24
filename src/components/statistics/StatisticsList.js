@@ -1,6 +1,5 @@
-import Statistics from "../statistics/Statistics";
-import PropTypes from "prop-types";
-
+import Statistics from '../statistics/Statistics';
+import PropTypes from 'prop-types';
 
 const StatisticsList = ({ statsData, title }) => {
   return (
@@ -8,8 +7,8 @@ const StatisticsList = ({ statsData, title }) => {
       {title && <h2 className="title">{title}</h2>}
       <ul className="stat-list">
         {statsData.map(({ id, label, percentage }) => (
-          <li key={id}>
-            <Statistics label={label} percentage={percentage} />
+          <li>
+            <Statistics label={label} percentage={percentage} key={id} />
           </li>
         ))}
       </ul>
@@ -18,15 +17,15 @@ const StatisticsList = ({ statsData, title }) => {
 };
 
 StatisticsList.defaultProps = {
-  title:''
-}
+  title: '',
+};
 
 StatisticsList.propTypes = {
   title: PropTypes.string,
   statsData: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
-    })
+    }),
   ).isRequired,
 };
 
