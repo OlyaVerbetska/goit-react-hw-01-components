@@ -1,4 +1,4 @@
-import Statistics from '../statistics/Statistics';
+import Statistics from '../Statistics/Statistics';
 import PropTypes from 'prop-types';
 
 const StatisticsList = ({ statsData, title }) => {

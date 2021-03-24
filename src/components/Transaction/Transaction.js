@@ -1,5 +1,4 @@
-
-const Transaction = ({type, amount, currency}) => {
+const Transaction = ({ type, amount, currency }) => {
   return (
     <tr>
       <td>{type}</td>
