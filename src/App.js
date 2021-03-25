@@ -6,7 +6,7 @@ import transactions from './transactions.json';
 
 // Components
 import Profile from './components/Profile/Profile';
-import StatisticsList from './components/StatisticsList/StatisticsList';
+import Statistics from './components/Statistics/Statistics';
 import FriendList from './components/FriendList/FriendList';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
@@ -26,8 +26,8 @@ const App = () => {
       <h1>
         <em>Секция статистики</em>
       </h1>
-      <StatisticsList statsData={statsData} title="Upload stats" />
-      <StatisticsList statsData={statsData} />
+      <Statistics statsData={statsData} title="Upload stats" />
+      {/* <Statistics statsData={statsData} /> */}
 
       <h1>
         <em>Список друзей</em>
