@@ -9,10 +9,13 @@ import Profile from './components/Profile/Profile';
 import Statistics from './components/Statistics/Statistics';
 import FriendList from './components/FriendList/FriendList';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import Container from './components/Container/Container';
+// styles
+import './styles.css';
 
 const App = () => {
   return (
-    <div>
+    <Container>
       <h1>
         <em>Профиль социальной сети</em>
       </h1>
@@ -37,7 +40,7 @@ const App = () => {
         <em>История транзакций</em>
       </h1>
       <TransactionHistory items={transactions} />
-    </div>
+    </Container>
   );
 };
 export default App;

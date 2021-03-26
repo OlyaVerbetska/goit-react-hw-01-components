@@ -1,12 +1,13 @@
 .transactionHistory {
   width: 500px;
-  border: 1px solid grey;
+  border: 1px solid lightgrey;
+  border-collapse: collapse;
+  margin: 0 auto;
 }
-.transactionTitle {
-  background-color: rgb(131, 194, 245);
-  padding: 10px;
-}
+
 .transactionType {
   background-color: rgb(131, 194, 245);
   padding: 10px;
+  border: 1px solid lightgrey;
+  color: white;
 }

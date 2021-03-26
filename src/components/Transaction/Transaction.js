@@ -1,9 +1,11 @@
+import styles from '../Transaction/Transaction.module.css';
+
 const Transaction = ({ type, amount, currency }) => {
   return (
-    <tr>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+    <tr className={styles.tableRow}>
+      <td className={styles.tableItem}>{type}</td>
+      <td className={styles.tableItem}>{amount}</td>
+      <td className={styles.tableItem}>{currency}</td>
     </tr>
   );
 };

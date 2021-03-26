@@ -1,0 +1,9 @@
+.tableRow:nth-child(2n) {
+  background-color: Honeydew;
+}
+.tableItem {
+  border: 1px solid lightgrey;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 5px;
+}

@@ -4,22 +4,26 @@ import styles from '../Statistics/Statistics.module.css';
 // const color = "#" + Math.floor(Math.random() * 16777216).toString(16);
 // console.log (color);
 
-const Statistics = ({ statsData, title }, color) => {
+const Statistics = ({ statsData, title }) => {
+  // const color = "#" + Math.floor(Math.random() *
   return (
     <section className={styles.statistics}>
       {title && <h2 className={styles.title}>{title}</h2>}
-      <span>#{Math.floor(Math.random() * 16777216).toString(16)}</span>
+
       <ul className={styles.statList}>
-        {statsData.map(({ id, label, percentage }) => (
-          <li
-            key={id}
-            className={styles.listItem}
-            style={{ backgroundColor: 'red' }}
-          >
-            <span className={styles.label}>{label}</span>
-            <span className={styles.percentage}>{percentage}</span>
-          </li>
-        ))}
+        {statsData.map(({ id, label, percentage }) => {
+          const color = '#' + Math.floor(Math.random() * 16777216).toString(16);
+          return (
+            <li
+              key={id}
+              className={styles.listItem}
+              style={{ backgroundColor: color }}
+            >
+              <span className={styles.label}>{label}</span>
+              <span className={styles.percentage}>{percentage}</span>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );
